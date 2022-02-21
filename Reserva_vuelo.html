@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva vuelo</title>
+    <link rel="stylesheet" type="text/css" href="Hoja_Estilo.css">
+</head>
+<body>
+    <fieldset>
+    <h1>Reserva de vuelo</h1>
+    </fieldset>
+    <form method= "POST" target="_blank" action="Valida.php">
+        <h3>Formulario</h3>
+            <label><strong>Fecha de compra: </strong>15/02/2022 12:00:00</label></br>
+
+            <label><strong>Nombre</strong></label></br>
+            <input  name="Nombre" type="text"></br>
+    
+            <label><strong>Apellidos</strong></label></br>
+            <input name="Apellidos" type="text"></br>
+    
+            <label><strong>DNI</strong></label></br>
+            <input name="DNI" type="text" size="9"></br>
+
+            <label><strong>Email</strong></label></br>
+            <input name="Email" type="text" required></br>
+            
+            <label><strong>Código descuento</strong></label></br>
+            <input name="Codigo" type="text"></br>
+    
+            <label><strong>Importe</strong></label></br>
+            <input name="Importe" type="text"></br>
+
+            <label><strong>Maleta</strong></label></br>
+            <input name="Maleta" type="radio" value="Si">Si</input></br>
+            <input name="Maleta" type="radio" value="No">No</input></br>
+
+            <label><strong>Mascota</strong></label></br>
+            <input name="Mascota" type="radio" value="Si">Si</input></br>
+            <input name="Mascota" type="radio" value="No">No</input></br>
+
+
+            <h3>Elija aquí suelo con destino</h3>
+            <select name="Mostrar_Vuelos">
+                <option value="" selected  disabled>---Selecciona un vuelo---</option>
+                <option value="Vueling-AE12-Milán">Vueling-AE12-Milán</option>
+                <option value="Volotea-EA21-Roma">Volotea-EA21-Roma</option>
+                <option value="Iberia-WE44-Estambul">Iberia-WE44-Estambul</option>
+                <option value="Ryanair-EW44-Madrid">Ryanair-EW44-Madrid</option>
+                <option value="Vueling-ZK87-Lima">Vueling-ZK87-Lima</option>
+                <option value="Volotea-UA21-Bilbao">Volotea-UA21-Bilbao</option>
+                <option value="Iberia-WH44-Roma">Iberia-WH44-Roma</option>
+                <option value="Ryanair-EL00-Madrid">Ryanair-EL00-Madrid</option>
+                <option value=Vueling-AE12-Roma">Vueling-AE12-Roma</option>
+                <option value="Volotea-EA21-Milán">Volotea-EA21-Milán</option>
+                <option value="Iberia-WE44-New York">Iberia-WE44-New York</option>
+                <option value="Ryanair-EW44-Tokio">Ryanair-EW44-Tokio</option>
+                <option value="Vueling-ZK87-Chicago">Vueling-ZK87-Chicago</option>
+                <option value="Volotea-UA21-Paris">Volotea-UA21-Paris</option>
+                <option value="Iberia-WH44-Oporto">Iberia-WH44-Oporto</option>
+                <option value="Ryanair-EL00-Los Ángeles">Ryanair-EL00-Los Ángeles</option>
+                </select>
+
+                <h3>Elija aquí su divisa</h3>
+                <select name="Divisa">
+                    <option value="" selected  disabled>---Selecciona un vuelo---</option>
+                    <option value="Euros">Euros</option>
+                    <option value="USD">USD</option>
+                    <option value="Yen">Yen</option>
+                    <option value="Sol Peruano">Sol Peruano</option>
+                    <option value="Lira Turca">Lira Turca</option>
+                    </select>
+        </br></br>
+        <input name="" type="reset" value="Borrar">
+        <input name="" type="submit" value="Enviar">
+    </form>    
+    <table>
+        <caption><h3>Tabla de Precios (Sin IVA)</h3></caption>
+        <tr>
+            <td>Vuelo</td>
+            <td>Destino</td>
+            <td>Precio</td>
+        </tr>
+        <tr>
+            <td>Vueling-AE12</td>
+            <td>Milán</td>
+            <td>120€</td>
+        </tr>
+        <tr>
+            <td>Volotea-EA21</td>
+            <td>Roma</td>
+            <td>90€</td>
+        </tr>
+        <tr>
+            <td>Iberia-WE44</td>
+            <td>Estambul</td>
+            <td>200€</td>
+        </tr>
+        <tr>
+            <td>Ryanair-EW44</td>
+            <td>Madrid</td>
+            <td>50€</td>
+        </tr>
+        <tr>
+            <td>Vueling-ZK87</td>
+            <td>Lima</td>
+            <td>1000€</td>
+        </tr>
+        <tr>
+            <td>Volotea-UA21</td>
+            <td>Milán</td>
+            <td>70€</td>
+        </tr>
+        <tr>
+            <td>Iberia-WH44</td>
+            <td>Roma</td>
+            <td>95€</td>
+        </tr>
+        <tr>
+            <td>Ryanair-EL00</td>
+            <td>Madrid</td>
+            <td>80€</td>
+        </tr>
+    
+        <tr>
+            <td>Vueling-AE12</td>
+            <td>Roma</td>
+            <td>65€</td>
+        </tr>
+        <tr>
+            <td>Volotea-EA21</td>
+            <td>Milán</td>
+            <td>77€</td>
+        </tr>
+        <tr>
+            <td>Iberia-WE44</td>
+            <td>New York</td>
+            <td>1200€</td>
+        </tr>
+        <tr>
+            <td>Ryanair-EW44</td>
+            <td>Tokio</td>
+            <td>1100€</td>
+        </tr>
+        <tr>
+            <td>Vueling-ZK87</td>
+            <td>Chicago</td>
+            <td>1500€</td>
+        </tr>
+        <tr>
+            <td>Volotea-UA21</td>
+            <td>París</td>
+            <td>200€</td>
+        </tr>
+        <tr>
+            <td>Iberia-WH44</td>
+            <td>Oporto</td>
+            <td>45€</td>
+        </tr>
+        <tr>
+            <td>Ryanair-EL00</td>
+            <td>Los Ángeles</td>
+            <td>1700€</td>
+        </tr>
+    </table>
+</body>
+</html>
